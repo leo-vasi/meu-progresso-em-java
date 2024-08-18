@@ -1,0 +1,20 @@
+
+
+Version:	3.50
+CmdLine:	C:\workspace\projetos em java\calculadora.exe\calculadoraJava.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\workspace\projetos em java\calculadora.exe\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	1.000.000
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\java\zulu11.62.17-ca-jdk11.0.18-win_x64
+Substitute:	PATH = C:\Program Files\java\zulu11.62.17-ca-jdk11.0.18-win_x64\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\ImageMagick-7.1.0-Q16-HDRI;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Leo\AppData\Local\Microsoft\WindowsApps\;C:\xampp\php;C:\Users\Leo\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Leo\AppData\Local\Programs\Python\Python312\;C:\Users\Leo\AppData\Local\Microsoft\WindowsApps;C:\Users\Leo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Leo\AppData\Roaming\npm;C:\Users\Leo\AppData\Local\Programs\Hyper\resources\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\bin;;C:\Users\Leo\AppData\Local\GitHubDesktop\bin;C:\Program Files\java\zulu11.62.17-ca-jdk11.0.18-win_x64\bin
+JRE paths:	C:\Program Files\java\zulu11.62.17-ca-jdk11.0.18-win_x64;C:\Program Files\java\zulu11.62.17-ca-jdk11.0.18-win_x64\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\ImageMagick-7.1.0-Q16-HDRI;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Leo\AppData\Local\Microsoft\WindowsApps\;C:\xampp\php;C:\Users\Leo\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Leo\AppData\Local\Programs\Python\Python312\;C:\Users\Leo\AppData\Local\Microsoft\WindowsApps;C:\Users\Leo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Leo\AppData\Roaming\npm;C:\Users\Leo\AppData\Local\Programs\Hyper\resources\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\bin;;C:\Users\Leo\AppData\Local\GitHubDesktop\bin;C:\Program Files\java\zulu11.62.17-ca-jdk11.0.18-win_x64\bin
+Check launcher:	C:\Program Files\java\zulu11.62.17-ca-jdk11.0.18-win_x64\bin\javaw.exe (OK)
+Version string: 1.011.000_018 / 64-Bit (OK)
+Launcher:	C:\Program Files\java\zulu11.62.17-ca-jdk11.0.18-win_x64\bin\javaw.exe
+Launcher args:	-jar "C:\workspace\projetos em java\calculadora.exe\calculadoraJava.exe"
+Args length:	72/32768 chars
+Exit code:	0
