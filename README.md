@@ -1,4 +1,28 @@
-# meu-progresso-em-java
-Meu progresso em Java, passando por estrutura sequencial, condicional e de repetição, além de também conter o meu começo em POO e aplicações web.
+# Meu Progresso em Java
 
-Estou utilizando 3 IDEs diferentes (vscode, eclipse e netbeans), não uso nenhuma ferramenta de gerenciamento nesses projetos.
+Este repositório documenta minha jornada de aprendizado em Java, explorando desde fundamentos até conceitos mais avançados da linguagem. Aqui, compartilho códigos e exemplos que abrangem diversos tópicos e técnicas.
+
+## Conteúdo do Repositório
+
+### Fundamentos:
+- Estruturas Sequenciais
+- Estruturas Condicionais
+- Estruturas de Repetição
+
+### Tópicos Avançados:
+- Enumerações (Enum)
+- Conexão com Banco de Dados (JDBC)
+- Listas, Matrizes e Vetores
+- Manipulação e Tratamento de Exceções
+- Funções Lambda (com Map e Stream)
+- Manipulação de Arquivos (BufferedReader, FileReader, entre outros)
+
+## Ferramentas Utilizadas
+
+Durante o desenvolvimento dos projetos contidos neste repositório, utilizei diferentes IDEs para aprimorar minha experiência e adaptação a variados ambientes de trabalho:
+- Visual Studio Code (VSCode)
+- NetBeans
+- Eclipse
+- IntelliJ IDEA
+
+
