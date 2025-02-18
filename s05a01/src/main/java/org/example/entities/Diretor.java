@@ -4,9 +4,7 @@ public class Diretor extends Funcionario{
 
     private String unidade;
 
-    public Diretor(String nome, String cpf, Double salario, String unidade) {
-        super(nome, cpf, salario);
-        this.unidade = unidade;
+    public Diretor() {
     }
 
     public String getUnidade() {
@@ -19,6 +17,6 @@ public class Diretor extends Funcionario{
 
     @Override
     public double calcularBonificacao() {
-        return super.getSalario() * 0.15;
+        return super.getSalario() * 0.20;
     }
 }

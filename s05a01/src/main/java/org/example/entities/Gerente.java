@@ -4,9 +4,7 @@ public class Gerente extends Funcionario{
 
     private String setor;
 
-    public Gerente(String nome, String cpf, Double salario, String setor) {
-        super(nome, cpf, salario);
-        this.setor = setor;
+    public Gerente() {
     }
 
     public String getSetor() {
@@ -19,6 +17,6 @@ public class Gerente extends Funcionario{
 
     @Override
     public double calcularBonificacao() {
-        return super.getSalario() * 0.10;
+        return super.getSalario() * 0.15;
     }
 }
