@@ -4,30 +4,30 @@ public class Appointment {
     private Doctor doctor;
     private String diagnosis;
 
-    private Appointment(BuilderAppointment builder) {
+    private Appointment(AppointmentBuilder builder) {
         this.animal = builder.animal;
         this.doctor = builder.doctor;
         this.diagnosis = builder.diagnosis;
     }
 
-    public static class BuilderAppointment {
+    public static class AppointmentBuilder {
         private Animal animal;
         private Doctor doctor;
         private String diagnosis;
 
-        public BuilderAppointment() {}
+        public AppointmentBuilder() {}
 
-        public BuilderAppointment animal(Animal animal) {
+        public AppointmentBuilder animal(Animal animal) {
             this.animal = animal;
             return this;
         }
 
-        public BuilderAppointment doctor(Doctor doctor) {
+        public AppointmentBuilder doctor(Doctor doctor) {
             this.doctor = doctor;
             return this;
         }
 
-        public BuilderAppointment diagnosis(String diagnosis) {
+        public AppointmentBuilder diagnosis(String diagnosis) {
             this.diagnosis = diagnosis;
             return this;
         }

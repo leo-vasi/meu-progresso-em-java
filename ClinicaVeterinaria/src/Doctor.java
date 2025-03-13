@@ -2,28 +2,28 @@ public class Doctor {
 
     private String name;
     private int crm;
-    private String specialty;
+    private String speciality;
 
 
-    public static class BuilderDoctor {
+    public static class DoctorBuilder {
         private String name;
         private int crm;
-        private String specialty;
+        private String speciality;
 
-        public BuilderDoctor() {}
+        public DoctorBuilder() {}
 
-        public BuilderDoctor name(String name) {
+        public DoctorBuilder name(String name) {
             this.name = name;
             return this;
         }
 
-        public BuilderDoctor crm(int crm) {
+        public DoctorBuilder crm(int crm) {
             this.crm = crm;
             return this;
         }
 
-        public BuilderDoctor specialty(String specialty) {
-            this.specialty = specialty;
+        public DoctorBuilder specialty(String specialty) {
+            this.speciality = specialty;
             return this;
         }
 
@@ -32,13 +32,13 @@ public class Doctor {
         }
     }
 
-    private Doctor(BuilderDoctor builderDoctor) {
-        this.name = builderDoctor.name;
-        this.crm = builderDoctor.crm;
-        this.specialty = builderDoctor.specialty;
+    private Doctor(DoctorBuilder doctorBuilder) {
+        this.name = doctorBuilder.name;
+        this.crm = doctorBuilder.crm;
+        this.speciality = doctorBuilder.speciality;
     }
 
     public String showInfo() {
-        return "\nName: " + name + "\nCRM: " + crm + "\nSpecialty: " + specialty;
+        return "\nName: " + name + "\nCRM: " + crm + "\nSpecialty: " + speciality;
     }
 }

@@ -4,37 +4,51 @@ public class Animal {
     private String name;
     private double weight;
 
-    public Animal() {
+    protected Animal(AnimalBuilder<?> builder) {
+        this.age = builder.age;
+        this.name = builder.name;
+        this.weight = builder.weight;
     }
 
-    public Animal(int age, String name, double weight) {
-        this.age = age;
-        this.name = name;
-        this.weight = weight;
+    public static class AnimalBuilder<T extends AnimalBuilder<T>> {
+        private int age;
+        private String name;
+        private double weight;
+
+        public T age(int age) {
+            this.age = age;
+            return self();
+        }
+
+        public T name(String name) {
+            this.name = name;
+            return self();
+        }
+
+        public T weight(double weight) {
+            this.weight = weight;
+            return self();
+        }
+
+        protected T self() {
+            return (T) this;
+        }
+
+        public Animal build() {
+            return new Animal(this);
+        }
     }
 
     public int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public double getWeight() {
         return weight;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
     }
 
     public String showInfo() {

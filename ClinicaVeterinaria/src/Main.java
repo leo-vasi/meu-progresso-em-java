@@ -39,7 +39,7 @@ public class Main {
                 if (choice == 1) {
                     System.out.println("Enter the cat's color:");
                     String color = scanner.nextLine();
-                    animal = new Cat.BuilderCat()
+                    animal = new Cat.CatBuilder()
                             .age(age)
                             .name(name)
                             .weight(weight)
@@ -50,7 +50,7 @@ public class Main {
                     System.out.println("Enter the dog's breed:");
                     String breed = scanner.nextLine();
 
-                    animal = new Dog.BuilderDog()
+                    animal = new Dog.DogBuilder()
                             .age(age)
                             .name(name)
                             .weight(weight)
@@ -60,7 +60,7 @@ public class Main {
                 } else if (choice == 3) {
                     System.out.println("Enter the species:");
                     String species = scanner.nextLine();
-                    animal = new OtherAnimal.BuilderOtherAnimal()
+                    animal = new OtherAnimal.OtherAnimalBuilder()
                             .age(age)
                             .name(name)
                             .weight(weight)
@@ -80,7 +80,7 @@ public class Main {
                 System.out.println("Enter the doctor's specialty:");
                 String specialty = scanner.nextLine();
 
-                Doctor doctor = new Doctor.BuilderDoctor()
+                Doctor doctor = new Doctor.DoctorBuilder()
                         .name(doctorName)
                         .crm(crm)
                         .specialty(specialty)
@@ -89,12 +89,12 @@ public class Main {
                 System.out.println("Enter the animal's diagnosis:");
                 String diagnosis = scanner.nextLine();
 
-                appointment = new Appointment.BuilderAppointment()
+                appointment = new Appointment.AppointmentBuilder()
                         .animal(animal)
                         .doctor(doctor)
                         .diagnosis(diagnosis)
                         .build();
-                
+
                 record.addAppointment(appointment);
 
                 System.out.println("Registration completed successfully!");
