@@ -6,7 +6,7 @@ public class Venda {
     private double totalVendido;
     private RegraDePagamento pagamento;
 
-    // Calcula o total baseado na regra de pagamento
+
     public double calcularTotal() {
         if (pagamento == null) {
             throw new IllegalStateException("Sem regra de pagamento");
