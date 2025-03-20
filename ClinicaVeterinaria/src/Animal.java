@@ -1,19 +1,24 @@
-public class Animal {
+import java.util.HashMap;
+import java.util.Map;
 
+public class Animal {
     private int age;
     private String name;
     private double weight;
+    private Map<String, String> attributes;
 
     protected Animal(AnimalBuilder<?> builder) {
         this.age = builder.age;
         this.name = builder.name;
         this.weight = builder.weight;
+        this.attributes = builder.attributes;
     }
 
     public static class AnimalBuilder<T extends AnimalBuilder<T>> {
         private int age;
         private String name;
         private double weight;
+        private Map<String, String> attributes = new HashMap<>();
 
         public T age(int age) {
             this.age = age;
@@ -30,6 +35,11 @@ public class Animal {
             return self();
         }
 
+        public T addAttribute(String key, String value) {
+            this.attributes.put(key, value);
+            return self();
+        }
+
         protected T self() {
             return (T) this;
         }
@@ -38,6 +48,7 @@ public class Animal {
             return new Animal(this);
         }
     }
+
 
     public int getAge() {
         return age;
@@ -51,7 +62,18 @@ public class Animal {
         return weight;
     }
 
+    public String getAttribute(String key) {
+        return attributes.get(key);
+    }
+
     public String showInfo() {
-        return "Age: " + age + "\nName: " + name + "\nWeight: " + weight;
+        StringBuilder info = new StringBuilder();
+        info.append("Age: ").append(age).append("\n");
+        info.append("Name: ").append(name).append("\n");
+        info.append("Weight: ").append(weight).append("\n");
+        for (Map.Entry<String, String> entry : attributes.entrySet()) {
+            info.append(entry.getKey()).append(": ").append(entry.getValue()).append("\n");
+        }
+        return info.toString();
     }
 }

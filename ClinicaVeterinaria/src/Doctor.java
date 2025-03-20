@@ -38,6 +38,30 @@ public class Doctor {
         this.speciality = doctorBuilder.speciality;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getCrm() {
+        return crm;
+    }
+
+    public void setCrm(int crm) {
+        this.crm = crm;
+    }
+
+    public String getSpeciality() {
+        return speciality;
+    }
+
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
+    }
+
     public String showInfo() {
         return "\nName: " + name + "\nCRM: " + crm + "\nSpecialty: " + speciality;
     }
